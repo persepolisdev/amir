@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>رزومه سید امیرعلی طباطبایی</title>
     <style>
         body {
-            font-family: 'Tahoma', sans-serif;ش
+            font-family: 'Tahoma', sans-serif;
             background-color: #f9f9f9;
-            margin: 40px;
+            margin: 20px;
             color: #333;
             line-height: 1.8;
         }
@@ -51,6 +50,7 @@
             flex-wrap: wrap;
             gap: 15px;
             margin-bottom: 30px;
+            justify-content: flex-start;
         }
         .skill-box {
             display: flex;
@@ -60,14 +60,65 @@
             padding: 10px 15px;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            flex: 1 1 180px;
         }
         .skill-box img {
             width: 24px;
             height: 24px;
             margin-left: 10px;
         }
+
+        /* ✅ Media Queries برای موبایل */
+        @media (max-width: 768px) {
+            body {
+                margin: 10px;
+                font-size: 14px;
+            }
+
+            table, thead, tbody, th, td, tr {
+                display: block;
+                width: 100%;
+            }
+
+            th {
+                text-align: right;
+                background-color: transparent;
+                border: none;
+                font-weight: bold;
+                padding-top: 10px;
+            }
+
+            td {
+                text-align: right;
+                border: none;
+                padding: 6px 10px;
+                position: relative;
+            }
+
+            tr {
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                padding: 10px;
+                background-color: #fff;
+            }
+
+            .skill-box {
+                flex: 1 1 100%;
+                justify-content: flex-start;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+        }
     </style>
 </head>
+
 <body>
 
     <h1>💼 سید امیرعلی طباطبایی</h1>
